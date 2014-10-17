@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="CustomFeedbackButton.CustomFeedbackButton" needsEntityContext="false" xmlns="http://www.mendix.com/widget/1.0/">
+  <name>Custom Feedback Widget</name>
+  <description>Feedback button dat triggers microflow for custom handling</description>
+
+  <icon></icon>
+
+  <properties>
+		
+		<property key="clickmicroflow" type="microflow" required="true">
+            <caption>On click</caption>
+            <category>Behavior</category>
+            <description>Microflow to trigger on click.</description>
+            <returnType type="Void"/>
+        </property> 
+        
+		
+        <property key="buttontext" type="enumeration" defaultValue="Feedback">
+            <caption>Button text</caption>
+            <category>Behavior</category>
+            <description>In what type of webpage must the URL be open.</description>
+            <enumerationValues>
+                <enumerationValue key="Feedback">Feedback</enumerationValue>
+                <enumerationValue key="Support">Support</enumerationValue>
+            </enumerationValues>
+        </property>
+    </properties>
+</widget>
